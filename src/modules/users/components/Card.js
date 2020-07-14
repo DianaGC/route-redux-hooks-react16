@@ -1,13 +1,13 @@
 import React from 'react';
+import './Card.css'
 
 const Card = ({data}) =>{
     const {id, title, body} = data
     return(
         <>
-        <div>
-            <p>{id}</p>
-            <div>{title}</div>
-            <div>{body}</div>
+        <div className="container">
+            <h3>{title}</h3>
+            <p>{body}</p>
         </div>
         </>
     )
